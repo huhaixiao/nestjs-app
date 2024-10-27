@@ -13,3 +13,7 @@ export class CatsController {
   }
 }
 ```
+
+```shell
+nest g controller [name]
+```

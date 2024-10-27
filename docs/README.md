@@ -1,8 +1,18 @@
 # nestjs
 
+- https://nestjs.com/
+- DTO Data Transfer Object
+- Entity - DB Table
+- ParseIntPipe
+- class-validator
+- class-transformer
+
 ```bash
 npm install -g @nestjs/cli
 nest new project-name
+
+# npx nest g resource [module-name]
+npx nest g resource users
 
 # To start the application
 npm run start
