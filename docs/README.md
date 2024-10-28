@@ -5,7 +5,12 @@
 - Entity - DB Table
 - ParseIntPipe
 - class-validator
+  - IsString()
+  - IsNotEmpty()
+  - IsEnum()
 - class-transformer
+- https://console.neon.tech/
+- https://www.prisma.io/
 
 ```bash
 npm install -g @nestjs/cli
@@ -25,6 +30,12 @@ $ npm run lint
 
 # Format with prettier
 $ npm run format
+
+npx prisma init
+# first migration
+npx prisma migrate dev --name init
+npx prisma migrate dev --name name_change
+npx prisma generate
 ```
 
 ```

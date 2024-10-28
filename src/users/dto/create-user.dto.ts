@@ -1,10 +1,4 @@
-import {
-  IsEmail,
-  IsEnum,
-  isNotEmpty,
-  IsNotEmpty,
-  IsString,
-} from 'class-validator';
+import { IsEmail, IsEnum, IsNotEmpty, IsString } from 'class-validator';
 
 /**
  * @description 注册用户DTO

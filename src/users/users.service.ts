@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
+import { NotFoundException } from '@nestjs/common';
 
 @Injectable()
 export class UsersService {
@@ -14,6 +15,9 @@ export class UsersService {
   }
 
   findOne(id: number) {
+    if (id > 100) {
+      throw new NotFoundException('用户不存在');
+    }
     return `This action returns a #${id} user`;
   }
 
