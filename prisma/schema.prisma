@@ -3,6 +3,10 @@ generator client {
   provider = "prisma-client-js"
 }
 
+// Steps to setup the DATABASE_URL value
+// 1. https://console.neon.tech/app/projects
+// 2. Dashboard/Connection Details/Prisma
+// 3. Dashboard/Connection Details/Pooled connection
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
